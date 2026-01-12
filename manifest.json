@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "StreamSuites LiveChat Launcher",
+  "version": "0.1.0",
+  "description": "Launches the StreamSuites LiveChat surface in a new tab.",
+  "action": {
+    "default_title": "Open StreamSuites LiveChat",
+    "default_icon": {
+      "128": "icons/icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icons/icon-128.png"
+  },
+  "permissions": ["tabs"]
+}
