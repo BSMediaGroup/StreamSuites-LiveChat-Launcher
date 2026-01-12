@@ -9,6 +9,80 @@ This repository contains a **minimal browser extension** whose sole purpose is t
 
 ---
 
+## STATUS BANNER
+**ALPHA / PREVIEW** — This is a launcher-only surface. It opens the existing StreamSuites LiveChat page in a new tab and does nothing else.
+
+## Project Overview
+**What this repo is:**
+- A minimal WebExtension that exposes a toolbar button.
+- A branded shortcut that opens the StreamSuites LiveChat web surface.
+- A convenience layer for launching LiveChat during broadcasts.
+
+**What this repo is NOT:**
+- Not a chat client.
+- Not a chat renderer.
+- Not a platform integration.
+- Not a runtime companion.
+
+**Boundaries:**
+- No chat logic.
+- No data ingestion.
+- No persistence.
+- No runtime interaction.
+
+## Relationship to StreamSuites
+- **Runtime repository:** authoritative source for LiveChat behavior and UI.
+- **Dashboard repository:** read-only UI surface for StreamSuites state.
+- **This repository:** a convenience launcher only.
+
+## Browser Support
+- Chromium-based browsers (Brave, Chrome, Edge)
+- Firefox (WebExtensions-compatible)
+- Safari is explicitly not supported.
+
+## Security & Authority Model
+- No authentication logic.
+- No data access or storage.
+- No mutation paths.
+- No runtime interaction.
+- No background networking.
+
+## Installation Instructions
+**Chromium (Load Unpacked)**
+1. Open `chrome://extensions/` (or equivalent for your browser).
+2. Enable **Developer mode**.
+3. Click **Load unpacked** and select this repository folder.
+
+**Firefox (Temporary Add-on)**
+1. Open `about:debugging#/runtime/this-firefox`.
+2. Click **Load Temporary Add-on**.
+3. Select `manifest.json` from this repository.
+
+_No store submission is required for local use._
+
+## Repository Layout
+```
+StreamSuites-LiveChat-Launcher/
+├── manifest.json
+├── background.js
+├── icons/
+│   └── icon-128.png
+└── README.md
+```
+
+## Design Principles
+- Minimalism
+- Decoupling
+- Zero authority
+- Zero persistence
+
+## License & Ownership
+- Proprietary
+- © Brainstream Media Group
+- Owner: Daniel Clancy
+
+---
+
 ## Purpose
 
 StreamSuites™ includes a Unified Chat system capable of:
