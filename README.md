@@ -127,3 +127,49 @@ Version metadata follows the same format:
   "copyright": "© 2026 Brainstream Media Group",
   "license": "Proprietary"
 }
+```
+
+Any release or update of this extension corresponds to the **same StreamSuites version and build** as the runtime it launches.
+
+The launcher does not increment builds independently and does not participate in semantic versioning beyond reflecting the current StreamSuites release.
+
+---
+
+## Repository Role in the StreamSuites Ecosystem
+
+This repository is part of a three-surface architecture:
+
+- **StreamSuites**  
+  The authoritative runtime. Owns chat ingestion, unified replay, synthetic chat, OBS overlays, automation, and state exports.
+
+- **StreamSuites-Dashboard**  
+  A static, read-only web dashboard that hydrates from runtime-exported data and provides control and visibility.
+
+- **StreamSuites-LiveChat-Launcher**  
+  An optional browser extension that provides a fast, convenient way to open the LiveChat UI.
+
+The launcher is intentionally minimal to ensure:
+- No duplicated logic
+- No version drift
+- No additional failure surface
+
+If the launcher is removed or unavailable, all LiveChat functionality remains accessible via the dashboards.
+
+---
+
+## Design Principles
+
+- Launcher-only responsibility
+- Runtime-authoritative data and state
+- Unified versioning across all StreamSuites surfaces
+- Zero platform authentication or chat posting
+- Optional, non-critical dependency
+
+---
+
+## License
+
+**Proprietary**
+
+© 2026 Brainstream Media Group  
+All rights reserved.
