@@ -63,6 +63,7 @@ _No store submission is required for local use._
 ## Repository Layout
 ```
 StreamSuites-LiveChat-Launcher/
+├── .gitignore
 ├── manifest.json
 ├── background.js
 ├── icons/
