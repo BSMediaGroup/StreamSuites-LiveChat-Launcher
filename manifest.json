@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "StreamSuites LiveChat Launcher",
-  "version": "0.1.0",
+  "version": "0.5.0-alpha",
   "description": "Launches the StreamSuites LiveChat surface in a new tab.",
   "action": {
     "default_title": "Open StreamSuites LiveChat",
